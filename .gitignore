@@ -1,0 +1,11 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# macOS metadata
+.DS_Store
