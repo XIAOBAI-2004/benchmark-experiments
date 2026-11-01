@@ -205,7 +205,7 @@ USER = "__DUMMY_TRANSFORMERS_USER__"
 ENDPOINT_STAGING = "https://hub-ci.huggingface.co"
 
 # Not critical, only usable on the sandboxed CI instance.
-TOKEN = ""
+TOKEN = os.environ.get("HF_STAGING_TOKEN", "")
 
 
 # Used in CausalLMModelTester (and related classes/methods) to infer the common model classes from the base model class
